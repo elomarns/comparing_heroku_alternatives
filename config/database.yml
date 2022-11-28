@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: comparing_heroku_alternatives_production
-  username: comparing_heroku_alternatives
-  password: <%= ENV["COMPARING_HEROKU_ALTERNATIVES_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
